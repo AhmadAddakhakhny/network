@@ -57,3 +57,20 @@
 3. Internet (layer 3)
 4. Data link (layer 2)
 5. Physical layer isn't officially coverd in the model
+
+---
+## Host to Host communication
+### why MAC address isn't sufficient for communication despite they are unique?
+> Because if **A** wants to communicate with **B** MAC-based, **A** would search for **B** among the whole MAC addresses world wide as they should be connected together in a mesh network. (Imossible)  
+> The solution for that is IP, to give routability
+
+### How IP (IPV4) look like?
+> two parts: one part to identify the network, the other is the host  
+> In real world the class-less method is used for IP segmentation.  
+> Remark: MAC address is needed for communication  
+
+### How the communication reach a specific app on host?
+> Through (layer 4) ports (HTTP 80, DNS 53,SSH 22). all on the same server.
+
+### What is a socket?
+> it's the full address (ip+port)
